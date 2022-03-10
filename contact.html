@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Great Page</title>
+    <title>The Great Contact Page</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/toasts.css">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -36,20 +37,35 @@
             </div>
         </nav>
 
-        <div class="p-5 text-center navbar-offset">
+        <div class="p-5 navbar-offset">
             <div class="container">
-                <h1 class="mb-3">The Great Page</h1>
+                <h1 class="mb-3">Contact</h1>
                 <h4 class="mb-3">
-                    This page is literally just a few various components put together on a single page,
-                    as I have absolutely zero idea what to put here...
-                    <!-- and honestly, I'd rather forget that Bootstrap exists... -->
+                    Feel free to reach out to me.
                 </h4>
             </div>
         </div>
     </header>
 
     <div class="container">
+        <form action="#" id="contact-form">
+            <div class="form-outline mb-4">
+                <input type="text" name="_" id="name" class="form-control">
+                <label for="name" class="form-label">Name</label>
+            </div>
 
+            <div class="form-outline mb-4">
+                <input type="email" name="_" id="emailForm" class="form-control">
+                <label for="emailForm" class="form-label">Email</label>
+            </div>
+
+            <div class="form-outline mb-4">
+                <textarea class="form-control" id="message" rows="4"></textarea>
+                <label class="form-label" for="message">Message</label>
+            </div>
+
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
     </div>
 
     <footer class="text-center text-muted">
@@ -57,8 +73,25 @@
             &copy; 2022 The authors of The Great Page. All rights reserved.
         </div>
     </footer>
+
+    <div class="position-fixed top-0 end-0 p-3 toast-wrapper">
+        <div id="contact-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Success!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                The form works! Nothing has been actually sent over the wire though&hellip;
+            </div>
+        </div>
+    </div>
 </body>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="/js/contact-form.js"></script>
 <script src="/js/navbar-active-links.js"></script>
 
 </html>
