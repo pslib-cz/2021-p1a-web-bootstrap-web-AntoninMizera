@@ -1,7 +1,7 @@
 export default function createGalleryMediaElement(carousel, idx, image, description) {
     {
         const wrapperElement = document.createElement("div");
-        wrapperElement.className = "row align-items-center";
+        wrapperElement.classList.add("row", "align-items-center");
         
         {
             const leftElement = document.createElement("div");
