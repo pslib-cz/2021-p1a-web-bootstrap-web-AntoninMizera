@@ -16,5 +16,5 @@ for (const idx of carouselItems.keys()) {
     const image = carouselItem.querySelector("img");
     const caption = carouselItem.querySelector(".carousel-caption");
 
-    container.appendChild(createGalleryMediaElement(carousel, idx, image, Array.from(caption.childNodes.values()).map(x => x.cloneNode(true))));
+    container.appendChild(createGalleryMediaElement(carousel, carouselElement, idx, image, Array.from(caption.childNodes.values()).map(x => x.cloneNode(true))));
 }

@@ -12,38 +12,35 @@
 </head>
 
 <body class="bg-light">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="/">The Great Page</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/gallery.html">Gallery</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">The Great Page</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallery.html">Gallery</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-
-        <div class="px-3 py-5 p-md-5 navbar-offset">
-            <div class="container">
-                <h1 class="mb-3">Gallery</h1>
-                <h4 class="mb-3">
-                    A bunch of images, displayed as a carousel and a list.
-                </h4>
-            </div>
+        </div>
+    </nav>
+    <header class="px-3 py-5 p-md-5">
+        <div class="container">
+            <h1 class="mb-3">Gallery</h1>
+            <h4 class="mb-3">
+                A bunch of images, displayed as a carousel and a list.
+            </h4>
         </div>
     </header>
 
@@ -60,7 +57,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
 
-                    <img src="/img/ep41-ud3l.webp" class="d-block w-75 mx-auto" alt="Gigabyte EP41-UD3L">
+                    <img src="/img/ep41-ud3l.webp" class="d-block mx-auto" alt="Gigabyte EP41-UD3L">
                     <div class="carousel-caption bg-dark bg-opacity-50 p-3 d-block">
                         <h5>Gigabyte EP41-UD3L</h5>
                         <p>
@@ -69,14 +66,14 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="carousel-item">
-                    <img src="/" class="d-block w-100" alt="...">
+                <div class="carousel-item">
+                    <img src="/img/look-into-nowhere.webp" class="d-block mx-auto" alt="A look into nowhere">
                     <div class="carousel-caption bg-secondary bg-opacity-75 p-3 d-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5>A look into nowhere</h5>
+                        <p>This photo was taken somewhere far away&hellip;</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <img src="..." class="d-block w-100" alt="...">
                     <div class="carousel-caption bg-secondary bg-opacity-75 p-3 d-block">
                         <h5>Third slide label</h5>

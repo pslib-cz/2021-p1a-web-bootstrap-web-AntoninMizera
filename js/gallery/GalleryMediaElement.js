@@ -1,4 +1,4 @@
-export default function createGalleryMediaElement(carousel, idx, image, description) {
+export default function createGalleryMediaElement(carousel, carouselElement, idx, image, description) {
     {
         const wrapperElement = document.createElement("div");
         wrapperElement.classList.add("row", "align-items-center");
@@ -24,11 +24,7 @@ export default function createGalleryMediaElement(carousel, idx, image, descript
                 
                 jumpButton.addEventListener("click", () => {
                     carousel.to(idx);
-                    window.scrollTo({
-                        behavior: "smooth",
-                        top: 0,
-                        left: 0
-                    });
+                    carouselElement.scrollIntoView();
                 });
 
                 jumpButton.innerText = "Switch";
